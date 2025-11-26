@@ -13,7 +13,7 @@ public class Main {
         System.out.println("Выберите нужную валюту: ");
         System.out.println("1. USD");
         System.out.println("2. EUR");
-        int choiceType = scanner.nextByte();
+        int choiceType = scanner.nextInt();
 
         String result = convertCurrency(valueSum, choiceType);
         int dotIndex = result.indexOf(".");
@@ -36,4 +36,5 @@ public class Main {
         }
         return "0";
     }
+
 }
